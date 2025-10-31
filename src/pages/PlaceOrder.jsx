@@ -8,6 +8,18 @@ const PlaceOrder = () => {
 
   const [method, setMethod] = useState('cod')
 
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    street: '',
+    city: '', 
+    state: '',
+    zipcode: '',
+    country: '',
+    phone: ''
+  })
+
   const {navigate} = useContext(ShopContext)
 
   return (
